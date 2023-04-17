@@ -6,7 +6,7 @@ using namespace cv;
 
 double pi = 3.14159265358979323846;
 
-void addWhiteLinesForRotation(Mat& inputImage) {
+void addLinesForRotation(Mat& inputImage) {
     int height = inputImage.rows;
     int width = inputImage.cols;
     // Radius of circumscribed circum
@@ -106,7 +106,7 @@ int main(int, char**) {
     waitKey(0);
 
     // Add white lines from each side of image for pixels don't dissapear while rotation
-    addWhiteLinesForRotation(image);
+    addLinesForRotation(image);
     imshow("Add white lines", image);
     waitKey(0);
 
