@@ -117,6 +117,7 @@ int main(int, char**) {
     // You can set rotation center there
     Point2f rotationCenter((image.cols - 1) / 2.0, (image.rows - 1) / 2.0);
 
+
     while (true) {
         rotateImage(image, rotationAngle, rotationCenter);
         imshow("Rotatated image", image);
